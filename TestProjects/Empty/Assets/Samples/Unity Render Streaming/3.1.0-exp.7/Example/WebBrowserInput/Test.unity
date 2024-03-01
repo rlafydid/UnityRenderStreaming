@@ -1273,7 +1273,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 66a65cfd7a439984eb610f94928dedf2, type: 2}
+  m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -3069,8 +3069,8 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 66a65cfd7a439984eb610f94928dedf2, type: 2}
-  m_TargetDisplay: 2
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -3087,7 +3087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112556112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.58, y: 1.436, z: -3.07}
+  m_LocalPosition: {x: 16.59, y: 1.436, z: -3.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3437,6 +3437,7 @@ GameObject:
   - component: {fileID: 1215389821}
   - component: {fileID: 1215389820}
   - component: {fileID: 1215389824}
+  - component: {fileID: 1215389825}
   m_Layer: 5
   m_Name: Canvas (Render Streaming Camera 1)
   m_TagString: Untagged
@@ -3569,6 +3570,20 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1215389825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215389819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3baf89c7738a76f419b316b07ff5c649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchId: 0
+  uiCamera: {fileID: 0}
 --- !u!1 &1263705288
 GameObject:
   m_ObjectHideFlags: 0
@@ -3582,6 +3597,7 @@ GameObject:
   - component: {fileID: 1263705291}
   - component: {fileID: 1263705290}
   - component: {fileID: 1263705294}
+  - component: {fileID: 1263705295}
   m_Layer: 5
   m_Name: Canvas (Render Streaming Camera 2)
   m_TagString: Untagged
@@ -3715,6 +3731,20 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1263705295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263705288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3baf89c7738a76f419b316b07ff5c649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchId: 0
+  uiCamera: {fileID: 0}
 --- !u!1 &1287993066
 GameObject:
   m_ObjectHideFlags: 0
@@ -4040,6 +4070,7 @@ GameObject:
   - component: {fileID: 1362474102}
   - component: {fileID: 1362474101}
   - component: {fileID: 1362474100}
+  - component: {fileID: 1362474104}
   m_Layer: 5
   m_Name: Canvas (Main Camera)
   m_TagString: Untagged
@@ -4130,6 +4161,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1362474104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362474098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16c6f78230fa4964a222622d8aae332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+  m_PlayerRoot: {fileID: 0}
 --- !u!1001 &1451208110
 PrefabInstance:
   m_ObjectHideFlags: 0
